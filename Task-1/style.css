@@ -1,0 +1,715 @@
+/* =================================
+   GENERAL STYLES
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #1f2937;
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+a {
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d1d1d1;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 12px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.logo-box {
+    background-color: #252b33;
+    color: white;
+
+    padding: 7px;
+    border-radius: 5px;
+
+    font-size: 12px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.nav-links .register-btn {
+    background-color: #2563eb;
+    color: white;
+
+    padding: 10px 13px;
+    border-radius: 5px;
+}
+
+.nav-links .register-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    max-width: 1100px;
+    margin: 24px auto 0;
+    padding: 32px 24px;
+
+    background: linear-gradient(
+        110deg,
+        #d9eff7,
+        #edf5f7
+    );
+
+    border-radius: 9px;
+}
+
+.heros {
+    max-width: 1100px;
+    margin: 24px auto 0;
+    padding: 1px 16px;
+    border-radius: 9px;
+
+    background: #e9f2fd;
+}
+
+.subtitle {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #374151;
+}
+
+.hero h1 {
+    font-size: 30px;
+    margin: 10px 0;
+    color: #17212b;
+}
+
+.hero-text {
+    font-size: 14px;
+    color: #4b5563;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.primary-btn {
+    display: inline-block;
+
+    background-color: #2563eb;
+    color: white;
+
+    padding: 11px 14px;
+    border-radius: 5px;
+
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.primary-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =================================
+   MAIN CONTENT
+================================= */
+
+.events-section {
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.section-header h2 {
+    font-size: 20px;
+    margin: 0 0 6px;
+    color: #252b33;
+}
+
+.section-header p {
+    font-size: 12px;
+    color: #6b7280;
+    margin: 0;
+}
+
+.schedule-link {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.schedule-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =================================
+   UPCOMING EVENT CARDS
+================================= */
+
+#events {
+    margin-bottom: 35px;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.event-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+    overflow: hidden;
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.event-banner {
+    height: 85px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tech-banner {
+    background: linear-gradient(
+        110deg,
+        #102b43,
+        #0795d4
+    );
+
+    color: white;
+}
+
+.culture-banner {
+    background: linear-gradient(
+        110deg,
+        #a72b50,
+        #e8a3b6
+    );
+
+    color: #33101c;
+}
+
+.sports-banner {
+    background: linear-gradient(
+        110deg,
+        #087b4b,
+        #27b77c
+    );
+
+    color: #073b29;
+}
+
+.event-content {
+    padding: 12px;
+}
+
+.event-tag {
+    display: inline-block;
+
+    font-size: 10px;
+    padding: 4px 6px;
+    border-radius: 3px;
+
+    margin-bottom: 7px;
+}
+
+.tech-tag {
+    background-color: #e0f2fe;
+    color: #075985;
+}
+
+.culture-tag {
+    background-color: #fce7f3;
+    color: #9d174d;
+}
+
+.sports-tag {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.event-content h3 {
+    font-size: 15px;
+    margin: 5px 0 10px;
+    color: #252b33;
+}
+
+.event-info {
+    font-size: 11px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #4b5563;
+
+    min-height: 38px;
+}
+
+.card-btn {
+    display: inline-block;
+
+    background-color: #2563eb;
+    color: white;
+
+    padding: 9px 12px;
+    border-radius: 4px;
+
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.card-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =================================
+   EVENT CATEGORIES
+================================= */
+
+.categories-section {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.categories-section .section-header {
+    margin-bottom: 12px;
+}
+
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.category-card {
+    min-height: 58px;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 7px;
+
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+
+
+.category-card span {
+    font-size: 16px;
+}
+
+.category-card p {
+    margin: 0;
+
+    font-size: 16px;
+    color: #374151;
+}
+
+
+/* =================================
+   EVENT SCHEDULE TABLE
+================================= */
+
+.schedule-section {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.schedule-section .section-header {
+    margin-bottom: 10px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+
+    font-size: 13px;
+    text-align: left;
+}
+
+thead {
+    background: linear-gradient(
+        110deg,
+         #2563eb,
+        #0795d4
+    );
+
+    color: white;
+}
+
+th {
+    padding: 14px 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+td {
+    padding: 13px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #4b5563;
+}
+
+tbody tr {
+    transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+    background-color: #f3f7fc;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =================================
+   EVENT REGISTRATION FORM
+================================= */
+
+.register-section {
+    margin-top: 25px;
+    margin-bottom: 30px;
+
+    padding: 25px;
+    background-color: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 9px;
+}
+
+.register-section .section-header {
+    margin-bottom: 12px;
+}
+
+.registration-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 14px;
+    row-gap: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 39px;
+
+    padding: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #374151;
+
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+
+    outline: none;
+
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.12);
+}
+
+
+/* Checkbox */
+
+.checkbox-group {
+    grid-column: 1 / -1;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 2px;
+}
+
+.checkbox-group input {
+    width: 13px;
+    height: 13px;
+
+    margin: 0;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    font-size: 11px;
+    color: #374151;
+    cursor: pointer;
+}
+
+
+/* Register Button */
+
+.form-button {
+    grid-column: 1 / -1;
+}
+
+.form-button button {
+    background-color: #2563eb;
+    color: #ffffff;
+
+    padding: 10px 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.form-button button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #111827;
+    color: #ffffff;
+
+    padding: 24px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #9ca3af;
+}
+
+footer .copyright {
+    margin-top: 15px;
+    font-size: 11px;
+    color: #6b7280;
+}
+
+
+/* =================================
+   TABLET RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        margin: 15px;
+        padding: 25px 18px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .events-section {
+        margin-top: 25px;
+        padding: 0 15px;
+    }
+
+    .events-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .categories-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .register-section {
+        padding: 20px;
+    }
+
+    .section-header {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+}
+
+
+/* =================================
+   MOBILE RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 480px) {
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 23px;
+    }
+
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+
+    .categories-container {
+        grid-template-columns: 1fr;
+    }
+
+    .event-banner {
+        height: 100px;
+    }
+
+    .section-header {
+        flex-direction: column;
+    }
+
+    .registration-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group,
+    .checkbox-group,
+    .form-button {
+        grid-column: 1;
+    }
+
+    .register-section {
+        padding: 16px;
+    }
+
+    table {
+        min-width: 550px;
+    }
+
+}
