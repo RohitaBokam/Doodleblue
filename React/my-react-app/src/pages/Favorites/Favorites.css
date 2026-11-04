@@ -1,0 +1,90 @@
+.favorites-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.favorites-heading {
+  background-color: #f3f0ff;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.favorites-heading h1 {
+  font-size: 34px;
+  color: #172554;
+  margin-bottom: 12px;
+}
+
+.favorites-heading p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.favorites-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 25px 65px;
+}
+
+.favorites-container > h2 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.empty-favorites {
+  text-align: center;
+  padding: 65px 20px;
+  background-color: #f8f7ff;
+  border: 1px dashed #c4b5fd;
+  border-radius: 12px;
+}
+
+.empty-favorites h3 {
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+.empty-favorites p {
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.empty-favorites button {
+  background-color: #6544c0;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.empty-favorites button:hover {
+  background-color: #5033a5;
+}
+
+@media (max-width: 900px) {
+  .favorites-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .favorites-heading h1 {
+    font-size: 28px;
+  }
+
+  .favorites-container {
+    padding: 30px 18px 45px;
+  }
+
+  .favorites-grid {
+    grid-template-columns: 1fr;
+  }
+}

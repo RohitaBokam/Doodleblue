@@ -1,0 +1,17 @@
+
+/* Home Page */
+
+.home-page {
+  width: 100%;
+  min-height: 100%;
+  background-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#events-section {
+  scroll-margin-top: 20px;
+}
+

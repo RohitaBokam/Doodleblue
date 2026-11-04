@@ -1,0 +1,21 @@
+{
+    "events":[
+        {
+            "id":1 ,
+            "title": "Campus Tech Fest 2026",
+            "category": "TECH",
+            "description":"Explore technology, discover new ideas, and connect with fellow students.",
+            "date": "November 5, 2026",
+            "venue": "Main Auditorium"
+        },
+         {
+            "id":2 ,
+            "title": "Cultural Day",
+            "category": "CULTURE",
+            "description":"Celebrate music, dance, art, and cultures from across campus.",
+            "date": "November 12, 2026",
+            "venue": "College Campus"
+        }
+
+    ]
+}

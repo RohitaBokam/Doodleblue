@@ -1,0 +1,130 @@
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 18px 7%;
+  border-bottom: 1px solid #eeeeee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: relative;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Logo */
+
+.navbar-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #6544c0;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+/* Navigation Links */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-links a {
+  display: inline-flex;
+  align-items: center;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #6544c0;
+  background-color: #eef2ff;
+  font-weight: 600;
+}
+
+.navbar-links a.active {
+  color: #6544c0;
+  background-color: #eef2ff;
+  font-weight: 600;
+}
+
+/* Favorite Count Badge */
+
+.navbar-favorite-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 16px;
+  background-color: #eef2ff;
+  color: #6544c0;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: default;
+  box-shadow: 0 2px 5px rgba(101, 68, 192, 0.15);
+}
+
+.navbar-favorite-button .favorite-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 21px;
+  height: 21px;
+  padding: 0 6px;
+  margin: 0;
+  border-radius: 50px;
+  background-color: #6544c0;
+  color: #eef2ff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px 5%;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .navbar-logo {
+    font-size: 23px;
+  }
+
+  .navbar-links {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .navbar-links a {
+    font-size: 13px;
+    padding: 8px 11px;
+  }
+
+  .favorite-count {
+    min-width: 19px;
+    height: 19px;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+}
